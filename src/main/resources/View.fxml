@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="579.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+  <children>
+    <TabPane prefHeight="579.0" prefWidth="762.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <tabs>
+        <Tab text="New Courier">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Separator layoutY="386.0" prefWidth="762.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                  <effect>
+                    <GaussianBlur>
+                      <input>
+                        <DropShadow blurType="ONE_PASS_BOX" />
+                      </input>
+                    </GaussianBlur>
+                  </effect>
+                </Separator>
+                <Separator layoutX="363.0" layoutY="0.0" orientation="VERTICAL" prefHeight="386.0">
+                  <effect>
+                    <DropShadow blurType="ONE_PASS_BOX">
+                      <input>
+                        <GaussianBlur radius="22.434210526315788" />
+                      </input>
+                    </DropShadow>
+                  </effect>
+                </Separator>
+                <Label layoutX="128.0" layoutY="14.0" text="Pickup Details" textFill="BLACK">
+                  <font>
+                    <Font name="Arial Black" size="12.0" fx:id="x1" />
+                  </font>
+                </Label>
+                <Label layoutX="27.0" layoutY="51.0" text="Sender Name:" />
+                <Label layoutX="27.0" layoutY="76.0" text="Mobile Number:" />
+                <Label layoutX="27.0" layoutY="101.0" text="Address:" />
+                <Label layoutX="25.0" layoutY="201.0" text="Country" />
+                <Label layoutX="209.0" layoutY="198.0" text="PIN Code:" />
+                <Label layoutX="27.0" layoutY="252.0" text="Item decsription:" />
+                <Label layoutX="25.0" layoutY="316.0" text="Package Weight (gram):" />
+                <TextField layoutX="128.0" layoutY="51.0" prefWidth="200.0" promptText="Enter Sender's Name" />
+                <TextArea layoutX="128.0" layoutY="104.0" prefHeight="79.0" prefWidth="200.0" wrapText="true" />
+                <TextField layoutX="128.0" layoutY="76.0" prefWidth="200.0" />
+                <TextField layoutX="73.0" layoutY="198.0" prefWidth="122.0" />
+                <TextField layoutX="265.0" layoutY="198.0" prefWidth="89.0" />
+                <TextArea layoutX="129.0" layoutY="251.0" prefHeight="46.0" prefWidth="200.0" wrapText="true" />
+                <TextField layoutX="181.0" layoutY="316.0" prefWidth="95.0" />
+                <TextField layoutX="548.0" layoutY="51.0" prefWidth="200.0" />
+                <Label font="$x1" layoutX="520.0" layoutY="11.0" text="Recipient Details" />
+                <Label layoutX="401.0" layoutY="51.0" text="Recipient Full Name" />
+                <Label layoutX="401.0" layoutY="79.0" text="Mobille Number" />
+                <Label layoutX="401.0" layoutY="136.0" text="Address:" />
+                <Label layoutX="401.0" layoutY="220.0" text="Country" />
+                <Label layoutX="591.0" layoutY="223.0" text="PIN Code" />
+                <Label layoutX="401.0" layoutY="274.0" text="Address Type:" />
+                <Label layoutX="401.0" layoutY="104.0" text="Alternate Phone no:" />
+                <RadioButton layoutX="507.0" layoutY="274.0" mnemonicParsing="false" text="Home" />
+                <RadioButton layoutX="616.0" layoutY="274.0" mnemonicParsing="false" text="Office" />
+                <TextField layoutX="548.0" layoutY="76.0" prefWidth="200.0" />
+                <TextField layoutX="548.0" layoutY="101.0" prefWidth="200.0" />
+                <TextArea layoutX="507.0" layoutY="132.0" prefHeight="69.0" prefWidth="241.0" wrapText="true" />
+                <TextField layoutX="454.0" layoutY="220.0" prefWidth="122.0" />
+                <TextField layoutX="653.0" layoutY="223.0" prefWidth="95.0" />
+                <Label layoutX="401.0" layoutY="313.0" text="Additional information:" />
+                <TextField layoutX="548.0" layoutY="310.0" prefWidth="200.0" />
+                <Button layoutX="181.0" layoutY="357.0" mnemonicParsing="false" text="Clear all" />
+                <Button layoutX="265.0" layoutY="357.0" mnemonicParsing="false" text="Save" />
+                <Button layoutX="549.0" layoutY="358.0" mnemonicParsing="false" text="Clear all" />
+                <Button layoutX="653.0" layoutY="359.0" mnemonicParsing="false" text="Save" />
+                <Label font="$x1" layoutX="349.0" layoutY="399.0" text="Office Use" />
+                <Button layoutX="544.0" layoutY="429.0" mnemonicParsing="false" text="Accept Package" />
+                <TextField layoutX="188.0" layoutY="431.0" prefWidth="200.0" />
+                <Button layoutX="50.0" layoutY="432.0" mnemonicParsing="false" text="Calculate Cost" />
+                <TextField layoutX="188.0" layoutY="472.0" prefWidth="200.0" />
+                <Button layoutX="549.0" layoutY="513.0" mnemonicParsing="false" text="Print Receipt" />
+                <Button fx:id="exitButton" layoutX="653.0" layoutY="513.0" mnemonicParsing="false" onAction="#onExitPressed" text="EXIT" />
+                <Label layoutX="401.0" layoutY="431.0" text="in Rupees" />
+                <Label layoutX="134.0" layoutY="475.0" text="UTID">
+                  <font>
+                    <Font name="System Bold Italic" size="12.0" />
+                  </font>
+                </Label>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Update Courier Package">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Label layoutX="49.0" layoutY="62.0" text="Enter UTID:" />
+                <TextField layoutX="123.0" layoutY="59.0" prefWidth="200.0" />
+                <Button layoutX="416.0" layoutY="59.0" mnemonicParsing="false" text="Search" />
+                <Separator layoutX="0.0" layoutY="137.0" prefWidth="762.0">
+                  <effect>
+                    <GaussianBlur>
+                      <input>
+                        <DropShadow blurType="ONE_PASS_BOX" />
+                      </input>
+                    </GaussianBlur>
+                  </effect>
+                </Separator>
+                <Label font="$x1" layoutX="292.0" layoutY="162.0" text="Last Checkpoint Details" />
+                <TextArea layoutX="173.0" layoutY="196.0" prefHeight="96.5" prefWidth="412.0" wrapText="true" />
+                <Separator layoutX="0.0" layoutY="325.0" prefWidth="762.0">
+                  <effect>
+                    <DropShadow blurType="ONE_PASS_BOX">
+                      <input>
+                        <GaussianBlur />
+                      </input>
+                    </DropShadow>
+                  </effect>
+                </Separator>
+                <Label font="$x1" layoutX="276.0" layoutY="342.0" text="Enter New checkpoit details:" />
+                <Label layoutX="28.0" layoutY="390.0" text="Country" />
+                <Label layoutX="210.0" layoutY="390.0" text="State" />
+                <Label layoutX="381.0" layoutY="390.0" text="City / Village" />
+                <Label layoutX="596.0" layoutY="390.0" text="PIN Code" />
+                <TextField layoutX="73.0" layoutY="387.0" prefWidth="131.0" />
+                <TextField layoutX="244.0" layoutY="387.0" prefWidth="131.0" />
+                <TextField layoutX="460.0" layoutY="387.0" prefWidth="125.0" />
+                <TextField layoutX="646.0" layoutY="387.0" prefWidth="100.0" />
+                <Button layoutX="493.0" layoutY="505.0" mnemonicParsing="false" text="Update" />
+                <Button layoutX="585.0" layoutY="505.0" mnemonicParsing="false" text="Cancel" />
+                <Button layoutX="675.0" layoutY="505.0" mnemonicParsing="false" text="EXIT" />
+                <Label layoutX="28.0" layoutY="438.0" text="Delivered to Recipient?" />
+                <RadioButton layoutX="186.0" layoutY="438.0" mnemonicParsing="false" text="Yes" />
+                <RadioButton layoutX="186.0" layoutY="475.0" mnemonicParsing="false" text="No" />
+                <Label layoutX="337.0" layoutY="441.0" text="Additional Comment:" />
+                <TextField layoutX="460.0" layoutY="441.0" prefWidth="288.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Status Tracking">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Label layoutX="91.0" layoutY="74.0" text="Enter UTID" />
+                <TextField layoutX="161.0" layoutY="68.0" prefWidth="200.0" />
+                <Button layoutX="424.0" layoutY="69.0" mnemonicParsing="false" text="Show Details" />
+                <Separator layoutX="0.0" layoutY="151.0" prefWidth="762.0">
+                  <effect>
+                    <DropShadow blurType="ONE_PASS_BOX">
+                      <input>
+                        <GaussianBlur />
+                      </input>
+                    </DropShadow>
+                  </effect>
+                </Separator>
+                <Label font="$x1" layoutX="317.0" layoutY="180.0" text="Package Details" />
+                <TextArea layoutX="161.0" layoutY="213.0" prefWidth="418.0" wrapText="true" />
+                <Button layoutX="512.0" layoutY="495.0" mnemonicParsing="false" text="Print" />
+                <Button layoutX="596.0" layoutY="495.0" mnemonicParsing="false" text="CLear" />
+                <Button layoutX="679.0" layoutY="496.0" mnemonicParsing="false" text="EXIT" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>
