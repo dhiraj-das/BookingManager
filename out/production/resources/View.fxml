@@ -15,84 +15,59 @@
 
 <AnchorPane id="AnchorPane" prefHeight="579.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
   <children>
-    <TabPane prefHeight="579.0" prefWidth="762.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane layoutY="567.0" prefHeight="58.0" prefWidth="762.0">
+         <children>
+    <Button fx:id="exitButton" layoutX="663.0" layoutY="16.0" mnemonicParsing="false" onAction="#onExitPressed" prefHeight="27.0" prefWidth="73.0" text="Exit" />
+         </children>
+      </AnchorPane>
+    <TabPane prefHeight="560.0" prefWidth="762.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
       <tabs>
         <Tab text="New Courier">
           <content>
             <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
               <children>
-                <Separator layoutY="386.0" prefWidth="762.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-                  <effect>
-                    <GaussianBlur>
-                      <input>
-                        <DropShadow blurType="ONE_PASS_BOX" />
-                      </input>
-                    </GaussianBlur>
-                  </effect>
-                </Separator>
-                <Separator layoutX="363.0" layoutY="0.0" orientation="VERTICAL" prefHeight="386.0">
-                  <effect>
-                    <DropShadow blurType="ONE_PASS_BOX">
-                      <input>
-                        <GaussianBlur radius="22.434210526315788" />
-                      </input>
-                    </DropShadow>
-                  </effect>
-                </Separator>
-                <Label layoutX="128.0" layoutY="14.0" text="Pickup Details" textFill="BLACK">
+                <Separator layoutX="366.0" orientation="VERTICAL" prefHeight="386.0" />
+                <Label layoutX="14.0" layoutY="13.0" text="Pickup Details" textFill="BLACK">
                   <font>
-                    <Font name="Arial Black" size="12.0" fx:id="x1" />
+                    <Font name="Futura Medium" size="14.0" fx:id="x1" />
                   </font>
                 </Label>
-                <Label layoutX="27.0" layoutY="51.0" text="Sender Name:" />
-                <Label layoutX="27.0" layoutY="76.0" text="Mobile Number:" />
-                <Label layoutX="27.0" layoutY="101.0" text="Address:" />
-                <Label layoutX="25.0" layoutY="201.0" text="Country" />
-                <Label layoutX="209.0" layoutY="198.0" text="PIN Code:" />
-                <Label layoutX="27.0" layoutY="252.0" text="Item decsription:" />
-                <Label layoutX="25.0" layoutY="316.0" text="Package Weight (gram):" />
-                <TextField layoutX="128.0" layoutY="51.0" prefWidth="200.0" promptText="Enter Sender's Name" />
-                <TextArea layoutX="128.0" layoutY="104.0" prefHeight="79.0" prefWidth="200.0" wrapText="true" />
-                <TextField layoutX="128.0" layoutY="76.0" prefWidth="200.0" />
-                <TextField layoutX="73.0" layoutY="198.0" prefWidth="122.0" />
-                <TextField layoutX="265.0" layoutY="198.0" prefWidth="89.0" />
-                <TextArea layoutX="129.0" layoutY="251.0" prefHeight="46.0" prefWidth="200.0" wrapText="true" />
-                <TextField layoutX="181.0" layoutY="316.0" prefWidth="95.0" />
-                <TextField layoutX="548.0" layoutY="51.0" prefWidth="200.0" />
-                <Label font="$x1" layoutX="520.0" layoutY="11.0" text="Recipient Details" />
-                <Label layoutX="401.0" layoutY="51.0" text="Recipient Full Name" />
-                <Label layoutX="401.0" layoutY="79.0" text="Mobille Number" />
-                <Label layoutX="401.0" layoutY="136.0" text="Address:" />
-                <Label layoutX="401.0" layoutY="220.0" text="Country" />
-                <Label layoutX="591.0" layoutY="223.0" text="PIN Code" />
-                <Label layoutX="401.0" layoutY="274.0" text="Address Type:" />
-                <Label layoutX="401.0" layoutY="104.0" text="Alternate Phone no:" />
-                <RadioButton layoutX="507.0" layoutY="274.0" mnemonicParsing="false" text="Home" />
-                <RadioButton layoutX="616.0" layoutY="274.0" mnemonicParsing="false" text="Office" />
-                <TextField layoutX="548.0" layoutY="76.0" prefWidth="200.0" />
-                <TextField layoutX="548.0" layoutY="101.0" prefWidth="200.0" />
-                <TextArea layoutX="507.0" layoutY="132.0" prefHeight="69.0" prefWidth="241.0" wrapText="true" />
-                <TextField layoutX="454.0" layoutY="220.0" prefWidth="122.0" />
-                <TextField layoutX="653.0" layoutY="223.0" prefWidth="95.0" />
-                <Label layoutX="401.0" layoutY="313.0" text="Additional information:" />
-                <TextField layoutX="548.0" layoutY="310.0" prefWidth="200.0" />
-                <Button layoutX="181.0" layoutY="357.0" mnemonicParsing="false" text="Clear all" />
-                <Button layoutX="265.0" layoutY="357.0" mnemonicParsing="false" text="Save" />
-                <Button layoutX="549.0" layoutY="358.0" mnemonicParsing="false" text="Clear all" />
-                <Button layoutX="653.0" layoutY="359.0" mnemonicParsing="false" text="Save" />
-                <Label font="$x1" layoutX="349.0" layoutY="399.0" text="Office Use" />
-                <Button layoutX="544.0" layoutY="429.0" mnemonicParsing="false" text="Accept Package" />
-                <TextField layoutX="188.0" layoutY="431.0" prefWidth="200.0" />
-                <Button layoutX="50.0" layoutY="432.0" mnemonicParsing="false" text="Calculate Cost" />
-                <TextField layoutX="188.0" layoutY="472.0" prefWidth="200.0" />
-                <Button layoutX="549.0" layoutY="513.0" mnemonicParsing="false" text="Print Receipt" />
-                <Button fx:id="exitButton" layoutX="653.0" layoutY="513.0" mnemonicParsing="false" onAction="#onExitPressed" text="EXIT" />
-                <Label layoutX="401.0" layoutY="431.0" text="in Rupees" />
-                <Label layoutX="134.0" layoutY="475.0" text="UTID">
-                  <font>
-                    <Font name="System Bold Italic" size="12.0" />
-                  </font>
-                </Label>
+                <Label layoutX="22.0" layoutY="51.0" text="Sender's Name:" />
+                <Label layoutX="21.0" layoutY="79.0" text="Mobile Number:" />
+                <Label layoutX="65.0" layoutY="113.0" text="Address:" />
+                <Label layoutX="66.0" layoutY="193.0" text="Country:" />
+                <Label layoutX="56.0" layoutY="223.0" text="PIN Code:" />
+                <Label layoutX="14.0" layoutY="255.0" text="Item description:" />
+                <Label layoutX="15.0" layoutY="292.0" prefHeight="36.0" prefWidth="153.0" text="Package Weight (gram):" textOverrun="LEADING_WORD_ELLIPSIS" wrapText="true" />
+                <TextField fx:id="senderName" layoutX="128.0" layoutY="46.0" prefWidth="200.0" promptText="Sender's Name" />
+                <TextArea fx:id="senderAddress" layoutX="128.0" layoutY="106.0" prefHeight="79.0" prefWidth="200.0" promptText="House No, Street" wrapText="true" />
+                <TextField fx:id="senderMobileNo" layoutX="128.0" layoutY="76.0" prefWidth="200.0" promptText="10 digit mobile number" />
+                <TextField fx:id="senderCountry" layoutX="128.0" layoutY="188.0" prefWidth="122.0" promptText="Country" />
+                <TextField fx:id="senderPincode" layoutX="128.0" layoutY="218.0" prefWidth="89.0" promptText="XXXXXX" />
+                <TextArea fx:id="itemDescription" layoutX="128.0" layoutY="248.0" prefHeight="46.0" prefWidth="200.0" promptText="Additional Info" wrapText="true" />
+                <TextField fx:id="packageWeight" layoutX="167.0" layoutY="297.0" prefWidth="95.0" promptText="in Gm(s)" />
+                <TextField fx:id="recipientName" layoutX="538.0" layoutY="46.0" prefWidth="200.0" promptText="Recipient's Name:" />
+                <Label font="$x1" layoutX="402.0" layoutY="13.0" text="Recipient Details" />
+                <Label layoutX="417.0" layoutY="51.0" text="Recipient's Name:" />
+                <Label layoutX="430.0" layoutY="81.0" text="Mobile Number:" />
+                <Label layoutX="472.0" layoutY="113.0" text="Address:" />
+                <Label layoutX="476.0" layoutY="190.0" text="Country:" />
+                <Label layoutX="468.0" layoutY="220.0" text="PIN Code:" />
+                <Label layoutX="440.0" layoutY="250.0" text="Address Type:" />
+                <RadioButton layoutX="540.0" layoutY="251.0" mnemonicParsing="false" text="Home" />
+                <RadioButton layoutX="653.0" layoutY="250.0" mnemonicParsing="false" text="Office" />
+                <TextField fx:id="recipientMobileNo" layoutX="538.0" layoutY="76.0" prefWidth="200.0" promptText="10 digit mobile number" />
+                <TextArea fx:id="recipientAddress" layoutX="538.0" layoutY="106.0" prefHeight="76.0" prefWidth="200.0" promptText="House No, Street" wrapText="true" />
+                <TextField fx:id="recipientCountry" layoutX="539.0" layoutY="185.0" prefWidth="122.0" promptText="Country" />
+                <TextField fx:id="recipientPincode" layoutX="540.0" layoutY="215.0" prefWidth="95.0" promptText="XXXXXX" />
+                <Button fx:id="senderClearButton" layoutX="252.0" layoutY="342.0" mnemonicParsing="false" onAction="#onClearSenderPressed" prefHeight="27.0" prefWidth="72.0" text="Clear all" />
+                <Button layoutX="199.0" layoutY="486.0" mnemonicParsing="false" onAction="#onSavePressed" prefHeight="31.0" prefWidth="127.0" text="Accept Package" />
+                <Button fx:id="recipientClearButton" layoutX="664.0" layoutY="342.0" mnemonicParsing="false" onAction="#onClearReceiverPressed" prefHeight="27.0" prefWidth="72.0" text="Clear all" />
+                <TextField layoutX="128.0" layoutY="416.0" prefWidth="200.0" />
+                <TextField editable="false" layoutX="128.0" layoutY="446.0" prefWidth="200.0" />
+                <Button layoutX="641.0" layoutY="488.0" mnemonicParsing="false" text="Print Receipt" />
+                <Label layoutX="14.0" layoutY="422.0" text="Amount Payable:" />
+                <Label layoutX="47.0" layoutY="451.0" text="Booking ID:" />
               </children>
             </AnchorPane>
           </content>
