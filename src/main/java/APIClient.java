@@ -11,7 +11,7 @@ public class APIClient {
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         OkHttpClient client = new OkHttpClient.Builder().addInterceptor(interceptor).build();
         retrofit = new Retrofit.Builder()
-                .baseUrl("https://reqres.in")
+                .baseUrl("https://booking-manager-backend.herokuapp.com")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build();
